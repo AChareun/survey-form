@@ -15,56 +15,56 @@
 
     <fieldset>
       <form action="#" method="post" id="survey-form">
-        <label id="name-label" for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <label id="name-label" for="name"><h2 class="section-title">Name</h2></label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <label id="email-label" for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          <label id="email-label" for="email"><h2 class="section-title">Email</h2></label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required>
 
-        <label id="number-label" for="number">Age (optional)</label>
-        <input type="number" id="number" name="age" placeholder="Age" min="12" max="100">
+          <label id="number-label" for="number"><h2 class="section-title">Age <em>(optional)</em></h2></label>
+          <input type="number" id="number" name="age" placeholder="Age" min="12" max="100">
 
-        <label id="role-label" for="dropdown">Which option best describes your current role?</label>
-        <select name="role" id="dropdown">
-          <option value="#">Select current role</option>
-          <option value="student">Student</option>
-          <option value="ft-job">Full Time Job</option>
-          <option value="ft-learner">Full Time Learner</option>
-          <option value="not-to-say">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
+        <div class="form-section">
+          <h2 class="section-title">Which option best describes your current role?</h2>
+          <select name="role" id="dropdown">
+            <option value="#" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="ft-job">Full Time Job</option>
+            <option value="ft-learner">Full Time Learner</option>
+            <option value="not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-        <label id="radio-label" for="radio-recommend">Would you recommend freeCodeCamp to a friend?</label><br>
-          <input type="radio" name="radio-recommend" id="radio-recommend-y" value="yes">
-          <label for="radio-recommend-y">Definitely</label><br>
-          <input type="radio" name="radio-recommend" id="radio-recommend-m" value="maybe">
-          <label for="radio-recommend-m">Maybe</label><br>
-          <input type="radio" name="radio-recommend" id="radio-recommend-n" value="no">
-          <label for="radio-recommend-n">Not Sure</label><br>
+        <div class="form-section">
+          <h2 class="section-title">Would you recommend freeCodeCamp to a friend?</h2>
+            <label class="labels" for="user-recommend-y"><input type="radio" name="user-recommend" id="user-recommend-y" value="yes">Definitely</label>
+            <label class="labels" for="user-recommend-m"><input type="radio" name="user-recommend" id="user-recommend-m" value="maybe">Maybe</label>
+            <label class="labels" for="user-recommend-n"><input type="radio" name="user-recommend" id="user-recommend-n" value="no">Not Sure</label>
+        </div>
 
-        <label id="feature-label" for="feature">What is your favorite feature of freeCodeCamp</label>
-        <select name="feature" id="feature">
-          <option value="#">Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="open-source">Open Source</option>
-        </select>
+        <div class="form-section">
+          <h2 class="section-title">What is your favorite feature of freeCodeCamp</h2>
+          <select name="feature" id="feature">
+            <option value="#" disabled selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div>
 
-        <label for="improvements">What would you like to see improved? <span>(Check all that apply)</span></label><br>
-          <input type="checkbox" name="improvements" id="check-frontend" value="frontend">
-          <label for="check-frontend">Not Sure</label><br>
-          <input type="checkbox" name="improvements" id="check-backend" value="backend">
-          <label for="check-backend">Not Sure</label><br>
-          <input type="checkbox" name="improvements" id="check-wiki" value="wiki">
-          <label for="check-wiki">Not Sure</label><br>
-          <input type="checkbox" name="improvements" id="check-forum" value="forum">
-          <label for="check-forum">Not Sure</label><br>
-          <input type="checkbox" name="improvements" id="check-meetups" value="meetups">
-          <label for="check-meetups">Not Sure</label><br>
+        <div class="form-section">
+          <h2 class="section-title">What would you like to see improved? <em>(Check all that apply)</em></h2>
+            <label class="labels" for="user-frontend"><input type="checkbox" name="improvements" id="user-frontend" value="frontend">Frontend</label>
+            <label class="labels" for="user-backend"><input type="checkbox" name="improvements" id="user-backend" value="backend">Backend</label>
+            <label class="labels" for="user-wiki"><input type="checkbox" name="improvements" id="user-wiki" value="wiki">Wiki</label>
+            <label class="labels" for="user-forum"><input type="checkbox" name="improvements" id="user-forum" value="forum">Forum</label>
+            <label class="labels" for="user-meetups"><input type="checkbox" name="improvements" id="user-meetups" value="meetups">Meetups</label>
+        </div>
 
-          <label for="comments-area">Any comments or suggestions?</label><br>
-          <textarea name="comments" id="comments-area" cols="50" rows="5"></textarea>
+          <label for="comments-area"><h2 class="section-title">Any comments or suggestions?</h2></label>
+          <textarea name="comments" id="comments-area" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
 
           <button type="submit" id="submit">Submit</button>
       </form>
