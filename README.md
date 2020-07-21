@@ -8,5 +8,5 @@ Credits for the background-img to Alex Kotliarskyi from Unsplash.
 [Demo](https://achareun.github.io/survey-form/)
 
 ## Work to do:
-- [ ] Add media-queries so it looks better on mobile
+- [ ] Redesign the whole project with a mobile-first approach
 - [ ] Give it a more personal style. Probably something dota related.
